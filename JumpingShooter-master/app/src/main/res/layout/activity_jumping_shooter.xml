@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/fondoprincipal">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="60dp">
+    <TableRow android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/buttonstate"
+        android:onClick="lanzarJuego"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#ff000000"
+        android:text="@string/jugar"
+        android:id="@+id/buttonjugar" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstate"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="#ff000000"
+            android:text="@string/ayuda"
+            android:onClick="lanzarAyuda"
+            android:id="@+id/buttonayuda" />
+    </TableRow>
+
+    <TableRow android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonstate"
+        android:textSize="20sp"
+        android:textColor="#ff000000"
+        android:text="@string/configuracion"
+        android:id="@+id/buttonconfiguracion"
+        android:onClick="lanzarPreferencias"
+        android:layout_gravity="center_vertical" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@drawable/buttonstate"
+            android:textSize="20sp"
+            android:textColor="#ff000000"
+            android:text="@string/puntuaciones"
+            android:onClick="lanzarPuntuaciones"
+            android:id="@+id/buttonpuntuaciones"
+            android:layout_gravity="center_vertical" />
+        </TableRow>
+
+
+      </TableLayout>
+</LinearLayout>

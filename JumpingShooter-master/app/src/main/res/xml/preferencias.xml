@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:layout="@drawable/fondoprincipal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_principal">
+    <CheckBoxPreference
+        android:key="musica"
+        android:title="Reproducir música"
+        android:summary="Se reproduce música de fondo"
+        android:defaultValue="true"/>
+    <ListPreference
+        android:key="dificultad"
+        android:title="Tipo de dificultad"
+        android:summary="Se escoge la dificultad del juego"
+        android:entries="@array/tiposDificultad"
+        android:entryValues="@array/tiposDificultadValores"
+        android:defaultValue="1"/>
+
+</PreferenceScreen>
